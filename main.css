@@ -411,13 +411,12 @@ footer h5 {
         font-size: 0.8em;
         margin: 2px;
     }
-
-    .split-section {
+.split-section {
         grid-template-columns: 1fr; 
         min-height: auto; 
         display: flex; 
         flex-direction: column;
-        gap: 0;
+        gap: 5px;
         padding: 0 5px;
     }
     .split-section.reverse {
@@ -441,6 +440,8 @@ footer h5 {
         font-size: 0.8em; 
         margin-bottom: 10px;
     }
+   
+    
     
     .food-table-container {
         padding: 0 5px;
@@ -499,4 +500,5 @@ footer h5 {
         margin-top: 15px;
     }
 }
+
 
