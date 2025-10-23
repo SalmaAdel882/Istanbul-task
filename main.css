@@ -381,83 +381,99 @@ footer h5 {
     text-align: right; 
 }
 
-
 @media (max-width: 992px) {
     
-    
     .hero-content h1 {
-        font-size: 2.5em; 
+        font-size: 2.2em; 
         letter-spacing: 1px;
     }
     .hero-content p {
-        font-size: 1.2em; 
-        max-width: 90%;
+        font-size: 1em; 
+        max-width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .hero-content a button {
+        padding: 8px 15px;
+        font-size: 0.9em;
     }
     
-    
     nav { 
-        flex-direction: column; 
-        padding: 10px 5px;
+        padding: 8px 15px;
     }
     .nav-links {
         display: flex;
-        flex-direction: column; 
-        gap: 5px;
-        width: 100%;
-        margin-top: 10px;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        width: 65%;
     }
     .nav-links a {
-        display: block; 
-        margin: 5px auto;
-        font-size: 0.9em;
+        padding: 5px 8px;
+        font-size: 0.8em;
+        margin: 2px;
     }
 
-    
     .split-section {
-        grid-template-columns: 1fr; 
+        grid-template-columns: repeat(2, 1fr); 
         min-height: auto; 
-        flex-direction: column; 
+        display: grid; 
+        gap: 5px;
+        padding: 0 5px;
     }
-    .split-section.reverse {
-        flex-direction: column; 
+    .split-item {
+        padding: 10px 5px;
+        min-height: 200px;
     }
     
     .split-item-content {
-        padding: 40px 20px;
-        text-align: center;
+        padding: 10px; 
     }
     
     .split-item h4 {
-        font-size: 2em; 
+        font-size: 1.2em; 
+        margin-bottom: 5px;
+    }
+    .split-item p {
+        font-size: 0.7em; 
+        margin-bottom: 10px;
     }
     
-    
+    .food-table-container {
+        padding: 0 5px;
+    }
     .food-table-container tr {
-        display: block; 
-        text-align: center;
-        padding: 15px 0;
+        padding: 10px 5px;
+        grid-template-columns: 25% 45% 30%; 
     }
-    .food-table-container tr td:nth-child(1), 
-    .food-table-container tr td:nth-child(2),
-    .food-table-container tr td:nth-child(3) {
-        width: 100%;
-        display: block; 
-        text-align: center;
-        padding: 5px 0;
+    .food-table-container tr td {
+        font-size: 0.8em;
     }
     .food-table-container tr td:nth-child(1) {
-        font-size: 1.3em;
-        padding-top: 10px;
+        font-size: 1em; 
     }
     
     
     footer {
-        grid-template-columns: 1fr;
-        padding: 30px 15px;
+        grid-template-columns: 1fr; 
+        padding: 20px 10px;
         text-align: center;
+        direction: ltr; 
     }
+    
+    .contact, .details, .copyright {
+        text-align: center;
+        direction: ltr;
+        margin-bottom: 10px;
+    }
+
+    .contact a {
+        display: inline-flex;
+        margin: 5px 10px;
+    }
+
     .copyright {
         text-align: center;
+        margin-top: 15px;
     }
 }
-        
+
