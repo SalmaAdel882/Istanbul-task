@@ -381,51 +381,83 @@ footer h5 {
     text-align: right; 
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column; 
-        text-align: center;
-        padding: 10px;
-        direction: ltr; 
-    }
-    .logo-link, .nav-links {
-        order: initial;
-        width: 100%;
-        text-align: center;
-    }
-    nav h1 {
-        margin-bottom: 10px;
-    }
+
+@media (max-width: 992px) {
+    
+    
     .hero-content h1 {
-        font-size: 3em; 
+        font-size: 2.5em; 
+        letter-spacing: 1px;
     }
     .hero-content p {
         font-size: 1.2em; 
+        max-width: 90%;
     }
+    
+    
+    nav { 
+        flex-direction: column; 
+        padding: 10px 5px;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column; 
+        gap: 5px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .nav-links a {
+        display: block; 
+        margin: 5px auto;
+        font-size: 0.9em;
+    }
+
+    
     .split-section {
         grid-template-columns: 1fr; 
-        min-height: 50vh;
-        direction: ltr; 
+        min-height: auto; 
+        flex-direction: column; 
     }
+    .split-section.reverse {
+        flex-direction: column; 
+    }
+    
+    .split-item-content {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .split-item h4 {
+        font-size: 2em; 
+    }
+    
+    
     .food-table-container tr {
         display: block; 
         text-align: center;
+        padding: 15px 0;
     }
-    .food-table-container tr td:nth-child(1), .food-table-container tr td:nth-child(3) {
+    .food-table-container tr td:nth-child(1), 
+    .food-table-container tr td:nth-child(2),
+    .food-table-container tr td:nth-child(3) {
         width: 100%;
-        display: block;
+        display: block; 
         text-align: center;
-        padding-bottom: 5px;
+        padding: 5px 0;
     }
-    .food-table-container td {
-        display: block;
-        width: 100%;
+    .food-table-container tr td:nth-child(1) {
+        font-size: 1.3em;
+        padding-top: 10px;
     }
+    
+    
     footer {
         grid-template-columns: 1fr;
-        padding: 40px 20px;
+        padding: 30px 15px;
+        text-align: center;
     }
     .copyright {
         text-align: center;
     }
 }
+        
