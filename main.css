@@ -19,8 +19,8 @@ body {
     line-height: 1.6;
     color: var(--primary-color);
     background-color: var(--background-main);
-    direction: rtl; 
-    text-align: right;
+    direction: ltr; 
+    text-align: left;
     scroll-behavior: smooth; 
     padding-top: 60px; 
 }
@@ -476,4 +476,5 @@ footer h5 {
         margin-top: 15px;
     }
 }
+
 
