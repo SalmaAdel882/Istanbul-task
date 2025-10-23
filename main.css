@@ -380,7 +380,6 @@ footer h5 {
     direction: ltr; 
     text-align: right; 
 }
-
 @media (max-width: 992px) {
     
     .hero-content h1 {
@@ -414,15 +413,20 @@ footer h5 {
     }
 
     .split-section {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr; 
         min-height: auto; 
-        display: grid; 
-        gap: 5px;
+        display: flex; 
+        flex-direction: column;
+        gap: 0;
         padding: 0 5px;
+    }
+    .split-section.reverse {
+        flex-direction: column; 
     }
     .split-item {
         padding: 10px 5px;
         min-height: 200px;
+        width: 100%;
     }
     
     .split-item-content {
@@ -430,28 +434,53 @@ footer h5 {
     }
     
     .split-item h4 {
-        font-size: 1.2em; 
+        font-size: 1.5em; 
         margin-bottom: 5px;
     }
     .split-item p {
-        font-size: 0.7em; 
+        font-size: 0.8em; 
         margin-bottom: 10px;
     }
+    
     
     .food-table-container {
         padding: 0 5px;
     }
-    .food-table-container tr {
-        padding: 10px 5px;
-        grid-template-columns: 25% 45% 30%; 
+    .food-table-container th {
+        display: none; 
     }
-    .food-table-container tr td {
+    .food-table-container tr {
+        direction: ltr;
+        grid-template-columns: 25% 45% 30%; 
+        padding: 10px 5px;
+    }
+    .food-table-container td {
+        padding: 8px;
+        font-size: 0.75em;
+        text-align: left;
+    }
+
+    .food-table-container tr td:nth-child(1) {
+        order: 1; 
+        font-size: 1.1em; 
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .food-table-container tr td:nth-child(2) {
+        order: 2; 
         font-size: 0.8em;
     }
-    .food-table-container tr td:nth-child(1) {
-        font-size: 1em; 
+
+    .food-table-container tr td:nth-child(3) {
+        order: 3; 
+        text-align: right; 
     }
     
+    .food-table-container img {
+        width: 80px; 
+        height: 80px;
+    }
     
     footer {
         grid-template-columns: 1fr; 
@@ -465,16 +494,8 @@ footer h5 {
         direction: ltr;
         margin-bottom: 10px;
     }
-
-    .contact a {
-        display: inline-flex;
-        margin: 5px 10px;
-    }
-
     .copyright {
         text-align: center;
         margin-top: 15px;
     }
 }
-
-
