@@ -442,7 +442,6 @@ footer h5 {
         margin-bottom: 10px;
     }
     
-    
     .food-table-container {
         padding: 0 5px;
     }
@@ -450,6 +449,7 @@ footer h5 {
         display: none; 
     }
     .food-table-container tr {
+        
         direction: ltr;
         grid-template-columns: 25% 45% 30%; 
         padding: 10px 5px;
@@ -499,3 +499,4 @@ footer h5 {
         margin-top: 15px;
     }
 }
+
